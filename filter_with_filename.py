@@ -25,7 +25,7 @@ class ConvertImage:
         return int((self.image[i:i + self.size, j:j + self.size].sum()) // self.size ** 2)
 
 
-original_image = Image.open('test_image.jpg')
+original_image = Image.open('image.jpg')
 pixels = np.array(original_image)
 result = ConvertImage(pixels, size=10, gradation=50).convert_image()
-result.save('result.jpg')
+result.save('with_filename_result.jpg')

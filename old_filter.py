@@ -1,6 +1,6 @@
 from PIL import Image
 import numpy as np
-img = Image.open("test_image.jpg")
+img = Image.open("image.jpg")
 arr = np.array(img)
 a = len(arr)
 a1 = len(arr[1])
@@ -25,4 +25,4 @@ while i < a - 11:
         j = j + 10
     i = i + 10
 res = Image.fromarray(arr)
-res.save('result.jpg')
+res.save('old_result.jpg')
